@@ -319,3 +319,44 @@ div.header {
         line-height: 25px; }
         div.header div.second-row div.searchbar button[type="submit"] div.loupe svg {
           vertical-align: middle; }
+
+div.slider {
+  background: url(/assets/img/slider-cover-1.jpg) no-repeat top center;
+  background-size: cover;
+  height: 600px;
+  position: relative; }
+  div.slider div.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    div.slider div.overlay div.content {
+      margin-left: auto;
+      padding-right: 150px;
+      padding-top: 55px;
+      width: 600px; }
+      div.slider div.overlay div.content h2.title {
+        font-family: Roboto-Bold;
+        font-size: 48px;
+        color: white;
+        text-align: right;
+        margin-bottom: 15px; }
+      div.slider div.overlay div.content div.orange-box {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center;
+        background: #ffab40;
+        border-radius: 10px;
+        width: 360px;
+        height: 90px;
+        margin-left: auto; }
+        div.slider div.overlay div.content div.orange-box p {
+          color: white;
+          font-family: Roboto-Regular;
+          font-size: 24px;
+          text-align: center;
+          line-height: 28px;
+          margin: 0; }
