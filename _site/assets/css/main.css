@@ -1,24 +1,4 @@
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
-@font-face {
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
-@font-face {
-  font-family: 'Fira Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
+@import url(https://fonts.googleapis.com/css?family=Roboto:700,400,300&subset=latin,latin-ext);
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -201,8 +181,10 @@ body {
   background-color: white;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #666;
+  width: 1440px;
+  max-width: 100%;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -281,46 +263,59 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
-.button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  height: 38px;
-  padding: 0 30px;
-  color: #555;
-  text-align: center;
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 38px;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border-radius: 4px;
-  border: 1px solid #bbb;
-  cursor: pointer;
-  box-sizing: border-box; }
-  .button:hover, .button:active, .button:focus,
-  button:hover,
-  button:active,
-  button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:active,
-  input[type="submit"]:focus,
-  input[type="reset"]:hover,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="button"]:hover,
-  input[type="button"]:active,
-  input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
-    outline: 0; }
-
-div.header h1 {
-  background-color: white;
+div.header {
   margin: 0;
   padding: 0; }
+  div.header div.first-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    div.header div.first-row div.logo {
+      padding-left: 95px;
+      padding-top: 35px; }
+    div.header div.first-row div.lang {
+      padding-right: 95px;
+      margin-top: 35px;
+      font-size: 16px; }
+  div.header div.second-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    div.header div.second-row ul {
+      padding-left: 95px;
+      margin: 0px;
+      padding-top: 15px; }
+      div.header div.second-row ul li {
+        display: inline-block;
+        margin-right: 30px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        color: #4a4a4a; }
+        div.header div.second-row ul li:hover {
+          border-bottom: 5px solid #2E5AA5; }
+    div.header div.second-row div.searchbar {
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 95px; }
+      div.header div.second-row div.searchbar input[type="search"] {
+        font-family: Roboto-Regular;
+        font-size: 24px;
+        height: 48px;
+        width: 267px;
+        border: 2px solid #405aa2;
+        border-radius: 10px;
+        text-indent: 10%;
+        color: #4a4a4a; }
+      div.header div.second-row div.searchbar button[type="submit"] {
+        background-color: #2E5AA5;
+        color: #ffffff;
+        width: 71px;
+        height: 52px;
+        border: 2px solid #405aa2;
+        border-radius: 0px 10px 10px 0px;
+        margin-left: -71px;
+        line-height: 25px; }
+        div.header div.second-row div.searchbar button[type="submit"] div.loupe svg {
+          vertical-align: middle; }

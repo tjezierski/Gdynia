@@ -1,4 +1,77 @@
-div.header h1
-  background-color: white
+div.header
   margin: 0
   padding: 0
+  // background-color: pink
+
+  div.first-row
+    display: flex
+    justify-content: space-between
+    // background-color: pink
+
+    div.logo
+      padding-left: 95px
+      padding-top: 35px
+
+      // width: 50%
+
+    div.lang
+      padding-right: 95px
+      margin-top: 35px
+      font-size: 16px
+      // background-color: gray
+
+  div.second-row
+    display: flex
+    justify-content: space-between
+
+
+    ul
+      padding-left: 95px
+      margin: 0px
+      // background-color: pink
+      padding-top: 15px
+
+      li
+        display: inline-block
+        margin-right: 30px
+        margin-bottom: 40px
+        font-size: 20px
+        color: #4a4a4a
+
+
+        &:hover
+          border-bottom: 5px solid $navy
+
+    div.searchbar
+      display: flex
+      // width: 267px
+      // height: 48px
+      margin-right: 95px
+      // background-color: gray
+
+      input[type="search"]
+        font-family: Roboto-Regular
+        font-size: 24px
+        height: 48px
+        width: 267px
+        border: 2px solid #405aa2
+        border-radius: 10px
+        // padding-right: 71px
+        text-indent: 10%
+        color: #4a4a4a
+        // background-color: gray
+
+
+      button[type="submit"]
+        background-color: $navy
+        color: #ffffff
+        width: 71px
+        height: 52px
+        border: 2px solid #405aa2
+        border-radius: 0px 10px 10px 0px
+        margin-left: -71px
+        line-height: 25px
+
+        div.loupe svg
+          vertical-align: middle
+          // background-color: black
