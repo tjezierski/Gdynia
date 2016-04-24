@@ -177,9 +177,12 @@ td,
 th {
   padding: 0; }
 
+html {
+  font-size: 14px; }
+
 body {
   background-color: white;
-  font-size: 14px;
+  font-size: 100%;
   line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   color: #666;
@@ -270,46 +273,46 @@ button:focus {
   outline: none; }
 
 div.header {
-  margin: 0;
-  padding: 0; }
+  margin: 0em;
+  padding: 0em; }
   div.header div.first-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
     div.header div.first-row div.logo {
-      padding-left: 95px;
-      padding-top: 35px; }
+      padding-left: 6.786em;
+      padding-top: 2.500em; }
     div.header div.first-row div.lang {
-      padding-right: 95px;
-      margin-top: 35px;
-      font-size: 16px; }
+      padding-right: 5.938em;
+      margin-top: 2.188em;
+      font-size: 1.143rem; }
   div.header div.second-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between; }
     div.header div.second-row ul {
-      padding-left: 95px;
-      margin: 0px;
-      padding-top: 15px; }
+      padding-left: 6.786em;
+      margin: 0em;
+      padding-top: 1.071em; }
       div.header div.second-row ul li {
         display: inline-block;
-        margin-right: 30px;
-        margin-bottom: 40px;
-        font-size: 20px;
+        margin-right: 1.500em;
+        margin-bottom: 2em;
+        font-size: 1.429rem;
         color: #4a4a4a; }
         div.header div.second-row ul li:hover {
-          border-bottom: 5px solid #2E5AA5; }
+          border-bottom: 0.357em solid #2E5AA5; }
     div.header div.second-row div.searchbar {
       display: -ms-flexbox;
       display: flex;
-      margin-right: 95px; }
+      margin-right: 6.786em; }
       div.header div.second-row div.searchbar input[type="search"] {
         font-family: Roboto-Regular;
         font-size: 24px;
-        height: 48px;
-        width: 267px;
+        height: 2em;
+        width: 11.125em;
         border: 2px solid #405aa2;
         border-radius: 10px;
         text-indent: 10%;
@@ -317,12 +320,12 @@ div.header {
       div.header div.second-row div.searchbar button[type="submit"] {
         background-color: #2E5AA5;
         color: #ffffff;
-        width: 71px;
-        height: 52px;
+        width: 5.071em;
+        height: 3.714em;
         border: 2px solid #405aa2;
         border-radius: 0px 10px 10px 0px;
-        margin-left: -71px;
-        line-height: 25px; }
+        margin-left: -5.071em;
+        line-height: 1.786em; }
         div.header div.second-row div.searchbar button[type="submit"] div.loupe svg {
           vertical-align: middle; }
 
@@ -334,37 +337,37 @@ div.slider {
   div.slider div.overlay {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    height: 600px;
+    height: 42.857em;
     width: 100%;
-    top: 0;
-    left: 0; }
+    top: 0em;
+    left: 0em; }
     div.slider div.overlay div.content {
       margin-left: auto;
-      padding-right: 150px;
-      padding-top: 55px;
-      width: 600px; }
+      padding-right: 10.714em;
+      padding-top: 3.929em;
+      width: 42.857em; }
       div.slider div.overlay div.content h2.title {
         font-family: Roboto-Bold;
-        font-size: 48px;
+        font-size: 3.429rem;
         color: white;
         text-align: right;
-        margin-bottom: 15px; }
+        margin-bottom: 1.071rem; }
       div.slider div.overlay div.content div.orange-box {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center;
         background: #ffab40;
-        border-radius: 10px;
-        width: 360px;
-        height: 90px;
+        border-radius: 0.714em;
+        width: 25.714em;
+        height: 6.429em;
         margin-left: auto; }
         div.slider div.overlay div.content div.orange-box p {
           color: white;
           font-family: Roboto-Regular;
-          font-size: 24px;
+          font-size: 1.714rem;
           text-align: center;
-          line-height: 28px;
+          line-height: 2.000rem;
           margin: 0; }
 
 div.loader {
@@ -372,36 +375,36 @@ div.loader {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 20px;
-  margin-top: 25px;
-  margin-bottom: 55px; }
+  height: 1.429em;
+  margin-top: 1.786em;
+  margin-bottom: 3.929em; }
   div.loader span.inactive {
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 1.429em;
+    width: 1.429em;
     background-color: rgba(46, 90, 165, 0.5);
     border-radius: 50%;
-    margin-right: 15px; }
+    margin-right: 1.071em; }
   div.loader span.active {
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 1.429em;
+    width: 1.429em;
     background-color: #2E5AA5;
     border-radius: 50%;
-    margin-right: 15px; }
+    margin-right: 1.071em; }
 
 section.news {
-  width: 1148px;
+  width: 82.000em;
   margin: 0 auto; }
   section.news h1 {
     font-family: Roboto-Bold;
-    font-size: 36px;
+    font-size: 2.571rem;
     color: #2E5AA5;
-    margin-bottom: 10px; }
+    margin-bottom: 0.714rem; }
   section.news div.blue-underline {
-    height: 10px;
+    height: 0.714em;
     background-color: #2E5AA5;
-    border-radius: 10px; }
+    border-radius: 0.714em; }
   section.news div.news-container {
     display: -ms-flexbox;
     display: flex;
@@ -410,224 +413,224 @@ section.news {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
     section.news div.news-container div.image-1 {
-      margin-top: 40px;
-      width: 550px;
-      height: 367px;
+      margin-top: 2.857em;
+      width: 39.286em;
+      height: 26.214em;
       background: url(/assets/img/img-1.jpg) no-repeat top center;
       background-size: cover;
       position: relative; }
       section.news div.news-container div.image-1 div.overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
-        width: 550px;
-        height: 367px;
-        top: 0px;
-        left: 0px; }
+        width: 39.286em;
+        height: 26.214em;
+        top: 0em;
+        left: 0em; }
       section.news div.news-container div.image-1 h2 {
         position: absolute;
         font-family: Roboto-Bold;
-        font-size: 36px;
+        font-size: 2.571rem;
         color: #ffffff;
-        line-height: 42px;
+        line-height: 3.000rem;
         text-align: left;
-        margin-left: 40px;
-        margin-bottom: 25px;
+        margin-left: 2.857rem;
+        margin-bottom: 1.786rem;
         bottom: 0; }
     section.news div.news-container aside {
-      padding-top: 15px; }
+      padding-top: 1.071em; }
     section.news div.news-container div.image-2 {
-      margin-top: 40px;
-      width: 550px;
-      height: 367px;
+      margin-top: 2.857em;
+      width: 39.286em;
+      height: 26.214em;
       background: url(/assets/img/img-2.jpg) no-repeat top center;
       background-size: cover;
       position: relative; }
       section.news div.news-container div.image-2 div.overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
-        width: 550px;
-        height: 367px;
-        top: 0px;
-        left: 0px; }
+        width: 39.286em;
+        height: 26.214em;
+        top: 0em;
+        left: 0em; }
       section.news div.news-container div.image-2 h2 {
         position: absolute;
         font-family: Roboto-Bold;
-        font-size: 36px;
+        font-size: 2.571rem;
         color: #ffffff;
-        line-height: 42px;
+        line-height: 3rem;
         text-align: left;
-        margin-left: 40px;
-        margin-bottom: 25px;
-        bottom: 0; }
+        margin-left: 2.857rem;
+        margin-bottom: 1.786rem;
+        bottom: 0em; }
     section.news div.news-container aside {
-      padding-top: 15px; }
+      padding-top: 1.071em; }
     section.news div.news-container div.image-3 {
-      margin-top: 40px;
-      width: 353px;
-      height: 236px;
+      margin-top: 2.857em;
+      width: 25.214em;
+      height: 16.857em;
       background: url(/assets/img/img-3.jpg) no-repeat top center;
       background-size: cover;
       position: relative; }
       section.news div.news-container div.image-3 div.overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
-        width: 353px;
-        height: 236px;
-        top: 0px;
-        left: 0px; }
+        width: 25.214em;
+        height: 16.857em;
+        top: 0em;
+        left: 0em; }
       section.news div.news-container div.image-3 h2 {
         position: absolute;
         font-family: Roboto-Bold;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: #ffffff;
-        line-height: 30px;
+        line-height: 2.143rem;
         text-align: left;
-        margin-left: 40px;
-        margin-bottom: 25px;
-        bottom: 0; }
+        margin-left: 2.857rem;
+        margin-bottom: 1.786rem;
+        bottom: 0em; }
     section.news div.news-container aside {
-      padding-top: 15px; }
+      padding-top: 1.071em; }
     section.news div.news-container div.image-4 {
-      margin-top: 40px;
-      width: 353px;
-      height: 236px;
+      margin-top: 2.857em;
+      width: 25.214em;
+      height: 16.857em;
       background: url(/assets/img/img-4.jpg) no-repeat top center;
       background-size: cover;
       position: relative; }
       section.news div.news-container div.image-4 div.overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
-        width: 353px;
-        height: 236px;
-        top: 0px;
-        left: 0px; }
+        width: 25.214em;
+        height: 16.857em;
+        top: 0em;
+        left: 0em; }
       section.news div.news-container div.image-4 h2 {
         position: absolute;
         font-family: Roboto-Bold;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: #ffffff;
-        line-height: 30px;
+        line-height: 2.143rem;
         text-align: left;
-        margin-left: 40px;
-        margin-bottom: 25px;
-        bottom: 0; }
+        margin-left: 2.857rem;
+        margin-bottom: 1.786rem;
+        bottom: 0em; }
     section.news div.news-container aside {
-      padding-top: 15px; }
+      padding-top: 1.071em; }
     section.news div.news-container div.image-5 {
-      margin-top: 40px;
-      width: 353px;
-      height: 236px;
+      margin-top: 2.857em;
+      width: 25.214em;
+      height: 16.857em;
       background: url(/assets/img/img-5.jpg) no-repeat top center;
       background-size: cover;
       position: relative; }
       section.news div.news-container div.image-5 div.overlay {
         background-color: rgba(0, 0, 0, 0.3);
         position: absolute;
-        width: 353px;
-        height: 236px;
-        top: 0px;
-        left: 0px; }
+        width: 25.214em;
+        height: 16.857em;
+        top: 0em;
+        left: 0em; }
       section.news div.news-container div.image-5 h2 {
         position: absolute;
         font-family: Roboto-Bold;
-        font-size: 24px;
+        font-size: 1.714rem;
         color: #ffffff;
-        line-height: 30px;
+        line-height: 2.143rem;
         text-align: left;
-        margin-left: 40px;
-        margin-bottom: 25px;
-        bottom: 0; }
+        margin-left: 2.857rem;
+        margin-bottom: 1.786rem;
+        bottom: 0em; }
     section.news div.news-container aside {
-      padding-top: 15px; }
+      padding-top: 1.071em; }
 
 div.arrow-down {
-  margin-top: 50px;
+  margin-top: 3.571em;
   text-align: center; }
 
 section.rest {
-  width: 1148px;
+  width: 82.000em;
   margin: 0 auto; }
   section.rest h1 {
     font-family: Roboto-Bold;
-    font-size: 36px;
+    font-size: 2.571rem;
     color: #2E5AA5;
-    margin-bottom: 10px; }
+    margin-bottom: 0.714rem; }
   section.rest div.blue-underline {
-    height: 10px;
+    height: 0.714em;
     background-color: #2E5AA5;
-    border-radius: 10px; }
+    border-radius: 0.714em; }
   section.rest div.rest-container {
     display: -ms-flexbox;
     display: flex; }
     section.rest div.rest-container div.rest-image {
       background: url(/assets/img/Rest@2x.jpg) no-repeat top center;
       background-size: cover;
-      width: 450px;
-      height: 300px;
-      margin-top: 45px;
-      margin-right: 40px; }
+      width: 32.143em;
+      height: 21.429em;
+      margin-top: 3.214em;
+      margin-right: 2.857em; }
     section.rest div.rest-container div.rest-text {
-      width: 550px;
-      margin-top: 45px; }
+      width: 39.286em;
+      margin-top: 3.214em; }
       section.rest div.rest-container div.rest-text h2 {
-        font-size: 24px;
-        margin: 0px; }
+        font-size: 1.714rem;
+        margin: 0em; }
       section.rest div.rest-container div.rest-text p {
         font-family: Roboto-Regular;
-        font-size: 18px;
+        font-size: 1.286rem;
         color: #4a4a4a;
-        line-height: 28px;
+        line-height: 2.000rem;
         text-align: left;
-        margin-top: 15px; }
+        margin-top: 1.071rem; }
 
 section.education {
-  width: 1148px;
+  width: 82.000em;
   margin: 0 auto; }
   section.education h1 {
     font-family: Roboto-Bold;
-    font-size: 36px;
+    font-size: 2.571rem;
     color: #2E5AA5;
-    margin-bottom: 10px; }
+    margin-bottom: 0.714rem; }
   section.education div.blue-underline {
-    height: 10px;
+    height: 0.714em;
     background-color: #2E5AA5;
-    border-radius: 10px; }
+    border-radius: 0.714em; }
   section.education div.edu-container {
     display: -ms-flexbox;
     display: flex; }
     section.education div.edu-container div.edu-image {
       background: url(/assets/img/Edu@2x.jpg) no-repeat top center;
       background-size: cover;
-      width: 450px;
-      height: 300px;
-      margin-top: 45px;
-      margin-right: 40px; }
+      width: 32.143em;
+      height: 21.429em;
+      margin-top: 3.214em;
+      margin-right: 2.857em; }
     section.education div.edu-container div.edu-text {
-      width: 550px;
-      margin-top: 45px; }
+      width: 39.286em;
+      margin-top: 3.214em; }
       section.education div.edu-container div.edu-text h2 {
-        font-size: 24px;
+        font-size: 1.714rem;
         margin: 0px; }
       section.education div.edu-container div.edu-text p {
         font-family: Roboto-Regular;
-        font-size: 18px;
+        font-size: 1.286rem;
         color: #4a4a4a;
-        line-height: 28px;
+        line-height: 2.000rem;
         text-align: left;
-        margin-top: 15px; }
+        margin-top: 1.071rem; }
 
 section.office {
-  width: 1148px;
+  width: 82.000em;
   margin: 0 auto; }
   section.office h1 {
     font-family: Roboto-Bold;
-    font-size: 36px;
+    font-size: 2.571rem;
     color: #2E5AA5;
-    margin-bottom: 10px; }
+    margin-bottom: 0.714rem; }
   section.office div.blue-underline {
-    height: 10px;
+    height: 0.714em;
     background-color: #2E5AA5;
-    border-radius: 10px; }
+    border-radius: 0.714em; }
   section.office div.office-container {
     display: -ms-flexbox;
     display: flex;
@@ -639,35 +642,35 @@ section.office {
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
-      height: 100px;
-      margin-top: 45px; }
+      height: 7.143em;
+      margin-top: 3.6em; }
     section.office div.office-container div.office-text {
       display: -ms-flexbox;
       display: flex;
-      margin-left: 45px;
-      margin-top: 45px;
+      margin-left: 3.214rem;
+      margin-top: 3.214rem;
       font-family: Roboto-Regular;
-      font-size: 16px;
+      font-size: 1.143rem;
       color: #4a4a4a;
-      line-height: 25px;
+      line-height: 1.786rem;
       text-align: left; }
       section.office div.office-container div.office-text p.col-1 {
-        width: 399px; }
+        width: 24.938em; }
       section.office div.office-container div.office-text p.col-2 {
-        width: 550px; }
+        width: 34.375em; }
 
 div.logo-slider {
-  height: 250px;
+  height: 17.857em;
   max-width: 100%;
-  width: 1440px;
+  width: 102.857em;
   background: #5a83c2;
-  margin-top: 100px; }
+  margin-top: 7.143em; }
 
 div.footer {
   background-color: #2E5AA5;
   max-width: 100%;
-  width: 1440px;
-  height: 550px; }
+  width: 102.857em;
+  height: 39.286em; }
   div.footer div.footer-container {
     display: -ms-flexbox;
     display: flex;
@@ -678,51 +681,56 @@ div.footer {
     box-sizing: border-box; }
     div.footer div.footer-container ul, div.footer div.footer-container li {
       list-style: none;
-      margin-right: 80px; }
+      margin-right: 5.714em; }
     div.footer div.footer-container li.title {
       font-weight: bold;
-      margin-bottom: 10px;
-      margin-top: 75px; }
+      margin-bottom: 0.714em;
+      margin-top: 5.357em; }
     div.footer div.footer-container li.no-margin {
-      margin-right: 0px; }
+      margin-right: 0em; }
   div.footer h2 {
     font-family: Roboto-Bold;
-    font-size: 24px;
+    font-size: 1.714rem;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
-    margin: 80px 0 0 0; }
+    margin: 5.714rem 0 0 0; }
   div.footer div.buttons {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 6.429em; }
     div.footer div.buttons input.mail {
-      border: 2px solid #ffab40;
-      border-radius: 10px;
-      width: 256px;
-      height: 48px;
+      border: 0.143rem solid #ffab40;
+      border-radius: 0.714rem;
+      width: 18.286rem;
+      height: 3.929rem;
+      line-height: 3.929rem;
       background-color: #2E5AA5;
-      font-size: 24px;
+      font-size: 1.714rem;
       color: #ffffff;
       text-align: center;
-      margin: 45px 40px 0 0; }
-    div.footer div.buttons div.sign-in {
+      margin: 2.5rem 1.5rem 0px 0px;
+      box-sizing: border-box; }
+    div.footer div.buttons button.sign-in {
       display: inline-block;
       background: #ffab40;
-      border-radius: 10px;
-      width: 256px;
-      height: 48px;
+      border: 0rem;
+      border-radius: 0.714rem;
+      width: 18.286rem;
+      height: 3.929rem;
       color: white;
-      margin-top: 45px;
-      font-size: 24px;
-      line-height: 48px;
+      margin: 3.214rem 0px 0px 0px;
+      padding: 0px;
+      font-size: 1.714rem;
+      line-height: 3.929rem;
       color: #ffffff;
       text-align: center;
-      margin-top: 45px;
+      margin-top: 3.214rem;
       cursor: pointer; }
 
 div.cr-containter {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 1.143rem;
   color: #405aa2;
-  line-height: 24px;
+  line-height: 1.714rem;
   text-align: center;
-  margin: 25px 0; }
+  margin: 1.786rem 0; }
