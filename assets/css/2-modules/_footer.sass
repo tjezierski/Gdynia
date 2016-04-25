@@ -1,88 +1,94 @@
-div.logo-slider
-  height: 17.857em
-  max-width: 100%
+section.foot
   width: 102.857em
-  background: #5a83c2
-  margin-top: 7.143em
+  margin: 0 auto
+  .logo-slider
+    height: 17.857em
+    max-width: 100%
+    width: 102.857em
+    background: #5a83c2
+    margin-top: 7.143em
 
-div.footer
-  background-color: $navy
-  max-width: 100%
-  width: 102.857em
-  height: 39.286em
-
-  div.footer-container
-    display: flex
-    justify-content: center
+  .footer
     background-color: $navy
-    color: white
-    box-sizing: border-box
+    max-width: 100%
+    width: 102.857em
+    height: 39.286em
 
-    ul, li
-      list-style: none
-      margin-right: 5.714em
-      // background-color: pink
-
-    li.title
-      font-weight: bold
-      margin-bottom: 0.714em
-      margin-top: 5.357em
-
-    li.no-margin
-      margin-right: 0em
-
-  h2
-    font-family: Roboto-Bold
-    font-size: 1.714rem
-    color: #ffffff
-    text-align: center
-    text-transform: uppercase
-    // background-color: pink
-    margin: 5.714rem 0 0 0
-
-  div.buttons
-    text-align: center
-    // background-color: pink
-    margin-bottom: 6.429em
-
-    input.mail
-      border: 0.143rem solid #ffab40
-      border-radius: 0.714rem
-      width: 18.286rem
-      height: 3.929rem
-      line-height: 3.929rem
+    .footer-container
+      display: flex
+      justify-content: center
       background-color: $navy
-      font-family:Roboto-Regular
-      font-size: 1.714rem
-      color: #ffffff
-      text-align: center
-      margin: 2.5rem 1.5rem 0px 0px
+      color: white
       box-sizing: border-box
 
-    button.sign-in
-      display: inline-block
-      background: #ffab40
+      ul, li
+        list-style: none
+        margin-right: 5.714em
+        // background-color: pink
 
-      // box-sizing: border-box
-      border: 0rem
-      border-radius: 0.714rem
-      width: 18.286rem
-      height: 3.929rem
-      color: white
-      margin: 3.214rem 0px 0px 0px
-      padding: 0px
-      font-family:Roboto-Regular
+      li.title
+        font-weight: bold
+        margin-bottom: 0.714em
+        margin-top: 5.357em
+
+      li.no-margin
+        margin-right: 0em
+
+    h2
+      font-family: Roboto-Bold
       font-size: 1.714rem
-      line-height: 3.929rem
       color: #ffffff
       text-align: center
-      margin-top: 3.214rem
-      cursor: pointer
+      text-transform: uppercase
+      // background-color: pink
+      margin: 5.714rem 0em 0em 0em
 
-div.cr-containter
-  font-family: Roboto
-  font-size: 1.143rem
-  color: #405aa2
-  line-height: 1.714rem
-  text-align: center
-  margin: 1.786rem 0
+    .buttons
+      text-align: center
+      // background-color: pink
+      margin-bottom: 6.429em
+
+      input.mail
+        border: 0.143rem solid #ffab40
+        border-radius: 0.714rem
+        width: 18.286rem
+        height: 3.929rem
+        line-height: 3.929rem
+        background-color: $navy
+        font-family:Roboto-Regular
+        font-size: 1.714rem
+        color: #ffffff
+        text-align: center
+        margin: 2.5rem 1.5rem 0px 0px
+        box-sizing: border-box
+
+      button.sign-in
+        display: inline-block
+        background: #ffab40
+
+        // box-sizing: border-box
+        border: 0rem
+        border-radius: 0.714rem
+        width: 18.286rem
+        height: 3.929rem
+        color: white
+        margin: 3.214rem 0em 0em 0em
+        padding: 0em
+        font-family:Roboto-Regular
+        font-size: 1.714rem
+        line-height: 3.929rem
+        color: #ffffff
+        text-align: center
+        margin-top: 3.214rem
+        cursor: pointer
+
+        &:hover, focus
+          background-color: darken(#ffab40, 10%)
+
+  .cr-containter
+    font-family: Roboto
+    font-size: 1.143rem
+    color: #405aa2
+    line-height: 1.714rem
+    text-align: center
+    margin: 1.786rem 0

@@ -1,31 +1,36 @@
-div.header
+section.header
   margin: 0em
   padding: 0em
   // background-color: pink
 
-  div.first-row
+  .mob-menu
+    display: none
+
+  .first-row
     display: flex
     justify-content: space-between
     // background-color: pink
 
-    div.logo
+    .logo
       padding-left: 6.786em
       padding-top: 2.500em
 
-      // width: 50%
-
-    div.lang
+    .lang
       padding-right: 5.938em
       margin-top: 2.188em
       font-size: 	1.143rem
       // background-color: gray
 
-  div.second-row
+  .lang-mob
+    display: none
+    font-size: 1.3rem
+
+  .second-row
     display: flex
     justify-content: space-between
 
 
-    ul
+    ul.main-menu
       padding-left: 6.786em
       margin: 0em
       // background-color: pink
@@ -42,7 +47,7 @@ div.header
         &:hover
           border-bottom: 0.357em solid $navy
 
-    div.searchbar
+    .searchbar
       display: flex
       // width: 267px
       // height: 48px
@@ -51,7 +56,7 @@ div.header
 
       input[type="search"]
         font-family: Roboto-Regular
-        font-size: 24px
+        font-size: 1.714rem
         height: 2em
         width: 11.125em
         border: 2px solid #405aa2
@@ -59,6 +64,7 @@ div.header
         // padding-right: 71px
         text-indent: 10%
         color: #4a4a4a
+        // box-sizing: border-b: ox
         // background-color: gray
 
 
@@ -67,11 +73,55 @@ div.header
         color: #ffffff
         width: 5.071em
         height: 3.714em
-        border: 2px solid #405aa2
-        border-radius: 0px 10px 10px 0px
+        border: 0em
+        border-radius: 0em 0.714em 0.714em 0em
         margin-left: -5.071em
         line-height: 1.786em
 
-        div.loupe svg
+        .loupe svg
           vertical-align: middle
           // background-color: black
+
+
+@media screen and (max-width: 768px)
+  section.header
+    .lang-mob
+      text-align: right
+      display: block
+      // background-color: pink
+      margin: 2rem 2rem 0 0
+      font-size: 1.35em
+    .mob-menu
+      display: block
+      // background-color: red
+      // margin: 0 auto
+      text-align: right
+      margin-right: 2em
+      i
+        font-size: 4rem
+        color: $navy
+        // padding-top: .5em
+
+    ul.main-menu
+      display: none
+
+    .first-row
+      // background-color: pink
+      display: flex
+      align-items: center
+      flex-direction: row-reverse
+      margin-bottom: 1.5em
+      .logo
+        margin: 0 0 0 3em
+        padding: 0
+        svg
+          width: 100%
+
+
+      .lang
+        display: none
+
+
+
+    .second-row
+      display: none
