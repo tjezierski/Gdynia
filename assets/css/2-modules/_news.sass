@@ -120,6 +120,18 @@ aside
     // background-color: pink
     +small-describe
 
+.news-6
+  display: none
+  .image-6
+    margin-top: 2.857em
+    width: 25.214em
+    height: 16.857em
+    background: url(/assets/img/img-5.jpg) no-repeat top center
+    background-size: cover
+    position: relative
+    // background-color: pink
+    +small-describe
+
 section.news
   width: 82.000em
   max-width: 90%
@@ -134,5 +146,45 @@ section.news
   margin-top: 3.571em
   text-align: center
 
+@media screen and (max-width: 1235px)
+  .news-container
+    max-width: 100%
+    display: flex
 
-// @media screen and (max-width: 768px)
+    .news-1, .news-2
+      // border: 5px solid green
+      width: 48%
+      .image-1, .image-2
+        max-width: 100%
+        box-sizing: border-box
+        .overlay
+          max-width: 100%
+
+    .news-3, .news-4, .news-5, .news-6
+      width: 100%
+      // border: 2px solid gold
+      display: block
+      .image-3, .image-4, .image-5, .image-6
+        width: 100%
+        // border: 2px solid red
+        box-sizing: border-box
+        background-size: cover
+        .overlay
+          width: 100%
+
+@media screen and (max-width: 900px)
+  .news-container
+    max-width: 100%
+    margin: 0 auto
+    // display: flex
+    // align-content: center
+    .news-1, .news-2
+      // display: block
+      // border: 5px solid green
+      width: 100%
+
+      .image-1, .image-2
+        max-width: 100%
+        box-sizing: border-box
+        .overlay
+          max-width: 100%

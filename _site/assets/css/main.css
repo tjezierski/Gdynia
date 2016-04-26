@@ -437,6 +437,33 @@ aside {
 aside {
   padding-top: 1.071em; }
 
+.news-6 {
+  display: none; }
+  .news-6 .image-6 {
+    margin-top: 2.857em;
+    width: 25.214em;
+    height: 16.857em;
+    background: url(/assets/img/img-5.jpg) no-repeat top center;
+    background-size: cover;
+    position: relative; }
+    .news-6 .image-6 .overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      width: 25.214em;
+      height: 16.857em;
+      top: 0em;
+      left: 0em; }
+    .news-6 .image-6 h2 {
+      position: absolute;
+      font-family: Roboto-Bold;
+      font-size: 1.714rem;
+      color: #ffffff;
+      line-height: 2.143rem;
+      text-align: left;
+      margin-left: 2.857rem;
+      margin-bottom: 1.786rem;
+      bottom: 0em; }
+
 section.news {
   width: 82.000em;
   max-width: 90%;
@@ -582,6 +609,40 @@ section.news {
   margin-top: 3.571em;
   text-align: center; }
 
+@media screen and (max-width: 1235px) {
+  .news-container {
+    max-width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
+    .news-container .news-1, .news-container .news-2 {
+      width: 48%; }
+      .news-container .news-1 .image-1, .news-container .news-1 .image-2, .news-container .news-2 .image-1, .news-container .news-2 .image-2 {
+        max-width: 100%;
+        box-sizing: border-box; }
+        .news-container .news-1 .image-1 .overlay, .news-container .news-1 .image-2 .overlay, .news-container .news-2 .image-1 .overlay, .news-container .news-2 .image-2 .overlay {
+          max-width: 100%; }
+    .news-container .news-3, .news-container .news-4, .news-container .news-5, .news-container .news-6 {
+      width: 100%;
+      display: block; }
+      .news-container .news-3 .image-3, .news-container .news-3 .image-4, .news-container .news-3 .image-5, .news-container .news-3 .image-6, .news-container .news-4 .image-3, .news-container .news-4 .image-4, .news-container .news-4 .image-5, .news-container .news-4 .image-6, .news-container .news-5 .image-3, .news-container .news-5 .image-4, .news-container .news-5 .image-5, .news-container .news-5 .image-6, .news-container .news-6 .image-3, .news-container .news-6 .image-4, .news-container .news-6 .image-5, .news-container .news-6 .image-6 {
+        width: 100%;
+        box-sizing: border-box;
+        background-size: cover; }
+        .news-container .news-3 .image-3 .overlay, .news-container .news-3 .image-4 .overlay, .news-container .news-3 .image-5 .overlay, .news-container .news-3 .image-6 .overlay, .news-container .news-4 .image-3 .overlay, .news-container .news-4 .image-4 .overlay, .news-container .news-4 .image-5 .overlay, .news-container .news-4 .image-6 .overlay, .news-container .news-5 .image-3 .overlay, .news-container .news-5 .image-4 .overlay, .news-container .news-5 .image-5 .overlay, .news-container .news-5 .image-6 .overlay, .news-container .news-6 .image-3 .overlay, .news-container .news-6 .image-4 .overlay, .news-container .news-6 .image-5 .overlay, .news-container .news-6 .image-6 .overlay {
+          width: 100%; } }
+
+@media screen and (max-width: 900px) {
+  .news-container {
+    max-width: 100%;
+    margin: 0 auto; }
+    .news-container .news-1, .news-container .news-2 {
+      width: 100%; }
+      .news-container .news-1 .image-1, .news-container .news-1 .image-2, .news-container .news-2 .image-1, .news-container .news-2 .image-2 {
+        max-width: 100%;
+        box-sizing: border-box; }
+        .news-container .news-1 .image-1 .overlay, .news-container .news-1 .image-2 .overlay, .news-container .news-2 .image-1 .overlay, .news-container .news-2 .image-2 .overlay {
+          max-width: 100%; } }
+
 section.rest {
   width: 82.000em;
   max-width: 90%;
@@ -658,6 +719,7 @@ section.education {
 
 section.office {
   width: 82.000em;
+  max-width: 90%;
   margin: 0 auto; }
   section.office h1 {
     font-family: Roboto-Bold;
@@ -679,6 +741,8 @@ section.office {
       text-indent: 100%;
       white-space: nowrap;
       overflow: hidden;
+      width: 100%;
+      max-width: 15%;
       height: 7.143em;
       margin-top: 3.6em; }
     section.office .office-container .office-text {
@@ -691,13 +755,12 @@ section.office {
       color: #4a4a4a;
       line-height: 1.786rem;
       text-align: left; }
-      section.office .office-container .office-text p.col-1 {
-        width: 24.938em; }
-      section.office .office-container .office-text p.col-2 {
-        width: 34.375em; }
+      section.office .office-container .office-text .col-1 {
+        width: 100%; }
 
 section.foot {
   width: 102.857em;
+  max-width: 100%;
   margin: 0 auto; }
   section.foot .logo-slider {
     height: 17.857em;
@@ -707,49 +770,80 @@ section.foot {
     margin-top: 7.143em; }
   section.foot .footer {
     background-color: #2E5AA5;
-    max-width: 100%;
-    width: 102.857em;
-    height: 39.286em; }
-    section.foot .footer .footer-container {
+    color: white;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    width: 100%; }
+    section.foot .footer .footer-menu {
+      width: 100%;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
-          justify-content: center;
-      background-color: #2E5AA5;
-      color: white;
-      box-sizing: border-box; }
-      section.foot .footer .footer-container ul, section.foot .footer .footer-container li {
+          justify-content: center; }
+      section.foot .footer .footer-menu ul {
         list-style: none;
-        margin-right: 5.714em; }
-      section.foot .footer .footer-container li.title {
+        padding: 0;
+        margin-right: 5em;
+        display: inline-block; }
+      section.foot .footer .footer-menu li:hover {
+        color: #FFAB40;
+        cursor: pointer; }
+      section.foot .footer .footer-menu li.title {
         font-weight: bold;
         margin-bottom: 0.714em;
         margin-top: 5.357em; }
-      section.foot .footer .footer-container li.no-margin {
+      section.foot .footer .footer-menu .fb {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20height%3D%2228%22%20width%3D%2228%22%20version%3D%221.1%22%20viewBox%3D%220%200%2028%2028%22%3E%3Ctitle%3ECapa_1%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20id%3D%22facebook-Page-1%22%20fill-rule%3D%22evenodd%22%20fill%3D%22none%22%3E%3Cg%20id%3D%22facebook-Desktop-HD%22%20fill%3D%22%23fff%22%20transform%3D%22translate%28-1333%20-4793%29%22%3E%3Cg%20id%3D%22facebook-Footer%22%20transform%3D%22translate%280%204682%29%22%3E%3Cg%20id%3D%22facebook-Social-media%22%20transform%3D%22translate%281161%20111%29%22%3E%3Cg%20id%3D%22facebook-social%22%20transform%3D%22translate%28172.06%29%22%3E%3Cg%20id%3D%22facebook-Capa_1%22%3E%3Cpath%20id%3D%22facebook-Shape%22%20d%3D%22m13.873%200c-7.6494%200-13.873%206.2236-13.873%2013.873%200%207.65%206.2236%2013.874%2013.873%2013.874%207.65%200%2013.874-6.224%2013.874-13.874%200-7.6494-6.223-13.873-13.874-13.873zm3.451%2014.362h-2.258v8.045h-3.344v-8.045h-1.59v-2.844h1.59v-1.8386c0-1.3172%200.626-3.3753%203.375-3.3753l2.479%200.0095v2.76h-1.799c-0.293%200-0.709%200.1464-0.709%200.7745v1.6709h2.548l-0.292%202.843z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E) left center no-repeat;
+          background-text-indent: 100%;
+          background-white-space: nowrap;
+          background-overflow: hidden; }
+      section.foot .footer .footer-menu ul.no-margin {
         margin-right: 0em; }
-    section.foot .footer h2 {
-      font-family: Roboto-Bold;
-      font-size: 1.714rem;
-      color: #ffffff;
+    @media screen and (max-width: 1200px) {
+      section.foot .footer .footer-menu {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+        -ms-flex-pack: center;
+            justify-content: center;
+        width: 100%; }
+        section.foot .footer .footer-menu ul {
+          display: block;
+          width: 12em;
+          margin-right: 0em; } }
+    section.foot .footer .subscribe {
       text-align: center;
-      text-transform: uppercase;
-      margin: 5.714rem 0em 0em 0em; }
-    section.foot .footer .buttons {
-      text-align: center;
-      margin-bottom: 6.429em; }
-      section.foot .footer .buttons input.mail {
+      padding-bottom: 6.429em; }
+      section.foot .footer .subscribe h2 {
+        display: block;
+        font-family: Roboto-Bold;
+        font-size: 1.714rem;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 5.714rem 0em 0em 0em; }
+      section.foot .footer .subscribe input.mail {
+        display: inline-block;
         border: 0.143rem solid #ffab40;
         border-radius: 0.714rem;
         width: 18.286rem;
         height: 3.929rem;
         line-height: 3.929rem;
-        background-color: #2E5AA5;
+        background-color: transparent;
         font-size: 1.714rem;
         color: #ffffff;
         text-align: center;
         margin: 2.5rem 1.5rem 0px 0px;
         box-sizing: border-box; }
-      section.foot .footer .buttons button.sign-in {
+      section.foot .footer .subscribe button.sign-in {
         display: inline-block;
         background: #ffab40;
         border: 0rem;
@@ -765,12 +859,21 @@ section.foot {
         text-align: center;
         margin-top: 3.214rem;
         cursor: pointer; }
-        section.foot .footer .buttons button.sign-in:hover, section.foot .footer .buttons button.sign-in focus {
+        section.foot .footer .subscribe button.sign-in:hover, section.foot .footer .subscribe button.sign-in:focus {
           background-color: #ff950d; }
-  section.foot .cr-containter {
+      @media screen and (max-width: 540px) {
+        section.foot .footer .subscribe input.mail {
+          margin: 2.5rem auto 0rem;
+          display: block; }
+        section.foot .footer .subscribe button.sign-in {
+          margin: 2.5rem auto 0rem; } }
+  section.foot .rights {
     font-family: Roboto;
     font-size: 1.143rem;
     color: #405aa2;
     line-height: 1.714rem;
     text-align: center;
-    margin: 1.786rem 0; }
+    margin: 1.786rem 1rem; }
+    @media screen and (max-width: 600px) {
+      section.foot .rights .rights {
+        font-size: 1rem; } }
