@@ -1,191 +1,190 @@
-section.news
-  width: 1148px
-  margin: 0 auto
+=big-describe
+  .overlay
+    // background-color: black
+    background-color: rgba(0,0,0, 0.3)
+    position: absolute
+    width: 39.286em
+    height: 26.214em
+    top: 0em
+    left: 0em
+
+  h2
+    position: absolute
+    font-family: Roboto-Bold
+    font-size: 2.571rem
+    color: #ffffff
+    line-height: 3.000rem
+    text-align: left
+    // background-color: pink
+    margin-left: 2.857rem
+    margin-bottom: 1.786rem
+    bottom: 0
+
+aside
+  padding-top: 1.071em
+
+=small-describe
+  .overlay
+    // background-color: black
+    background-color: rgba(0,0,0, 0.3)
+    position: absolute
+    width: 25.214em
+    height: 16.857em
+    top: 0em
+    left: 0em
+
+  h2
+    position: absolute
+    font-family: Roboto-Bold
+    font-size: 1.714rem
+
+    color: #ffffff
+    line-height: 2.143rem
+    text-align: left
+    // background-color: pink
+    margin-left: 2.857rem
+    margin-bottom: 1.786rem
+    bottom: 0em
+
+aside
+  padding-top: 1.071em
+
+=big-article
 
   h1
     font-family: Roboto-Bold
-    font-size: 36px
+    font-size: 2.571rem
     color: $navy
-    margin-bottom: 10px
-  div.blue-underline
-    height: 10px
-    background-color: $navy
-    border-radius: 10px
+    margin-bottom: 0.714rem
 
-  div.news-container
+  .blue-underline
+    height: 0.714em
+    background-color: $navy
+    border-radius: 0.714em
+
+  .news-container
     display: flex
     justify-content: space-between
     flex-wrap: wrap
 
-    div.image-1
-      margin-top: 40px
-      width: 550px
-      height: 367px
+    .image-1
+      margin-top: 2.857em
+      width: 39.286em
+      height: 26.214em
       background: url(/assets/img/img-1.jpg) no-repeat top center
       background-size: cover
       position: relative
       // background-color: pink
+      +big-describe
 
-      div.overlay
-        // background-color: black
-        background-color: rgba(0,0,0, 0.3)
-        position: absolute
-        width: 550px
-        height: 367px
-        top: 0px
-        left: 0px
-
-      h2
-        position: absolute
-        font-family: Roboto-Bold
-        font-size: 36px
-        color: #ffffff
-        line-height: 42px
-        text-align: left
-        // background-color: pink
-        margin-left: 40px
-        margin-bottom: 25px
-        bottom: 0
-
-    aside
-      padding-top: 15px
-
-    div.image-2
-      margin-top: 40px
-      width: 550px
-      height: 367px
+    .image-2
+      margin-top: 2.857em
+      width: 39.286em
+      height: 26.214em
       background: url(/assets/img/img-2.jpg) no-repeat top center
       background-size: cover
       position: relative
       // background-color: pink
+      +big-describe
 
-      div.overlay
-        // background-color: black
-        background-color: rgba(0,0,0, 0.3)
-        position: absolute
-        width: 550px
-        height: 367px
-        top: 0px
-        left: 0px
 
-      h2
-        position: absolute
-        font-family: Roboto-Bold
-        font-size: 36px
-        color: #ffffff
-        line-height: 42px
-        text-align: left
-        // background-color: pink
-        margin-left: 40px
-        margin-bottom: 25px
-        bottom: 0
 
-    aside
-      padding-top: 15px
+=small-article
+  .image-3
+    margin-top: 2.857em
+    width: 25.214em
+    height: 16.857em
+    background: url(/assets/img/img-3.jpg) no-repeat top center
+    background-size: cover
+    position: relative
+    // background-color: pink
+    +small-describe
 
-    div.image-3
-      margin-top: 40px
-      width: 353px
-      height: 236px
-      background: url(/assets/img/img-3.jpg) no-repeat top center
-      background-size: cover
-      position: relative
-      // background-color: pink
+  .image-4
+    margin-top: 2.857em
+    width: 25.214em
+    height: 16.857em
+    background: url(/assets/img/img-4.jpg) no-repeat top center
+    background-size: cover
+    position: relative
+    // background-color: pink
+    +small-describe
 
-      div.overlay
-        // background-color: black
-        background-color: rgba(0,0,0, 0.3)
-        position: absolute
-        width: 353px
-        height: 236px
-        top: 0px
-        left: 0px
+  .image-5
+    margin-top: 2.857em
+    width: 25.214em
+    height: 16.857em
+    background: url(/assets/img/img-5.jpg) no-repeat top center
+    background-size: cover
+    position: relative
+    // background-color: pink
+    +small-describe
 
-      h2
-        position: absolute
-        font-family: Roboto-Bold
-        font-size: 24px
+.news-6
+  display: none
+  .image-6
+    margin-top: 2.857em
+    width: 25.214em
+    height: 16.857em
+    background: url(/assets/img/img-5.jpg) no-repeat top center
+    background-size: cover
+    position: relative
+    // background-color: pink
+    +small-describe
 
-        color: #ffffff
-        line-height: 30px
-        text-align: left
-        // background-color: pink
-        margin-left: 40px
-        margin-bottom: 25px
-        bottom: 0
+section.news
+  width: 82.000em
+  max-width: 90%
+  margin: 0 auto
 
-    aside
-      padding-top: 15px
+  +big-article
+  +small-article
 
-    div.image-4
-      margin-top: 40px
-      width: 353px
-      height: 236px
-      background: url(/assets/img/img-4.jpg) no-repeat top center
-      background-size: cover
-      position: relative
-      // background-color: pink
 
-      div.overlay
-        // background-color: black
-        background-color: rgba(0,0,0, 0.3)
-        position: absolute
-        width: 353px
-        height: 236px
-        top: 0px
-        left: 0px
-
-      h2
-        position: absolute
-        font-family: Roboto-Bold
-        font-size: 24px
-
-        color: #ffffff
-        line-height: 30px
-        text-align: left
-        // background-color: pink
-        margin-left: 40px
-        margin-bottom: 25px
-        bottom: 0
-
-    aside
-      padding-top: 15px
-
-    div.image-5
-      margin-top: 40px
-      width: 353px
-      height: 236px
-      background: url(/assets/img/img-5.jpg) no-repeat top center
-      background-size: cover
-      position: relative
-      // background-color: pink
-
-      div.overlay
-        // background-color: black
-        background-color: rgba(0,0,0, 0.3)
-        position: absolute
-        width: 353px
-        height: 236px
-        top: 0px
-        left: 0px
-
-      h2
-        position: absolute
-        font-family: Roboto-Bold
-        font-size: 24px
-
-        color: #ffffff
-        line-height: 30px
-        text-align: left
-        // background-color: pink
-        margin-left: 40px
-        margin-bottom: 25px
-        bottom: 0
-
-    aside
-      padding-top: 15px
-
-div.arrow-down
+.arrow-down
   // background-color: pink
-  margin-top: 50px
+  margin-top: 3.571em
   text-align: center
+
+@media screen and (max-width: 1235px)
+  .news-container
+    max-width: 100%
+    display: flex
+
+    .news-1, .news-2
+      // border: 5px solid green
+      width: 48%
+      .image-1, .image-2
+        max-width: 100%
+        box-sizing: border-box
+        .overlay
+          max-width: 100%
+
+    .news-3, .news-4, .news-5, .news-6
+      width: 100%
+      // border: 2px solid gold
+      display: block
+      .image-3, .image-4, .image-5, .image-6
+        width: 100%
+        // border: 2px solid red
+        box-sizing: border-box
+        background-size: cover
+        .overlay
+          width: 100%
+
+@media screen and (max-width: 900px)
+  .news-container
+    max-width: 100%
+    margin: 0 auto
+    // display: flex
+    // align-content: center
+    .news-1, .news-2
+      // display: block
+      // border: 5px solid green
+      width: 100%
+
+      .image-1, .image-2
+        max-width: 100%
+        box-sizing: border-box
+        .overlay
+          max-width: 100%

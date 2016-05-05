@@ -1,73 +1,75 @@
-div.slider
+section.slide
   // background-color: pink
   background: url(/assets/img/slider-cover-1.jpg) no-repeat top center
   background-size: cover
-  height: 600px
+  height: 42.857em
   position: relative
 
-  div.overlay
+  .overlay
     background-color: rgba(0,0,0, 0.3)
     position: absolute
-    height: 600px
+    height: 42.857em
     width: 100%
-    top: 0
-    left: 0
+    top: 0em
+    left: 0em
 
-    div.content
+    .content
       margin-left: auto
-      padding-right: 150px
-      padding-top: 55px
+      padding-right: 10.714em
+      padding-top: 3.929em
       // background-color: pink
-      width: 600px
+      width: 42.857em
 
       h2.title
         font-family: Roboto-Bold
-        font-size: 48px
+        font-size: 3.429rem
         color: white
         text-align: right
-        margin-bottom: 15px
+        margin-bottom: 1.071rem
 
 
         // margin-right: 150px
-      div.orange-box
+      .orange-box
         display: flex
         align-items: center
         // align-content: center
         background: #ffab40
-        border-radius: 10px
-        width: 360px
-        height: 90px
+        border-radius: 0.714em
+        width: 25.714em
+        height: 6.429em
         margin-left: auto
 
         p
           color: white
           font-family: Roboto-Regular
-          font-size: 24px
+          font-size: 1.714rem
           text-align: center
-          line-height: 28px
+          line-height: 2.000rem
           // background-color: black
           margin: 0
 
-div.loader
+.loader
   display: flex
   justify-content: center
-  height: 20px
-  margin-top: 25px
-  margin-bottom: 55px
+  height: 1.429em
+  margin-top: 1.786em
+  margin-bottom: 3.929em
 
 
   span.inactive
     display: inline-block
     // width: 50px
     // height: 50px
-    +size(20px)
+    +size(1.429em)
     background-color: rgba($navy, 0.5)
     border-radius: 50%
-    margin-right: 15px
+    margin-right: 1.071em
 
   span.active
     display: inline-block
-    +size(20px)
+    +size(1.429em)
     background-color: $navy
     border-radius: 50%
-    margin-right: 15px
+    margin-right: 1.071em
+
+// @media screen and (max-width: 768px)
