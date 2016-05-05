@@ -1,136 +1,150 @@
-section.foot
-  width: 102.857em
+.logo-slider
+  height: 17.857em
   max-width: 100%
-  margin: 0 auto
-  .logo-slider
-    height: 17.857em
-    max-width: 100%
-    width: 102.857em
-    background: #5a83c2
-    margin-top: 7.143em
+  width: 102.857em
+  background: #5a83c2
+  margin-top: 7.143em
 
-  .footer
-    background-color: $navy
-    color: white
-    box-sizing: border-box
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
+.footer
+  background-color: $navy
+  color: white
+  box-sizing: border-box
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  width: 100%
+
+  .footer-menu
+    // background-color: pink
     width: 100%
+    display: flex
+    justify-content: center
 
-    .footer-menu
+    li.fb
+    	// background
+      //   image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20height%3D%2228%22%20width%3D%2228%22%20version%3D%221.1%22%20viewBox%3D%220%200%2028%2028%22%3E%3Ctitle%3ECapa_1%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20id%3D%22facebook-Page-1%22%20fill-rule%3D%22evenodd%22%20fill%3D%22none%22%3E%3Cg%20id%3D%22facebook-Desktop-HD%22%20fill%3D%22%23fff%22%20transform%3D%22translate%28-1333%20-4793%29%22%3E%3Cg%20id%3D%22facebook-Footer%22%20transform%3D%22translate%280%204682%29%22%3E%3Cg%20id%3D%22facebook-Social-media%22%20transform%3D%22translate%281161%20111%29%22%3E%3Cg%20id%3D%22facebook-social%22%20transform%3D%22translate%28172.06%29%22%3E%3Cg%20id%3D%22facebook-Capa_1%22%3E%3Cpath%20id%3D%22facebook-Shape%22%20d%3D%22m13.873%200c-7.6494%200-13.873%206.2236-13.873%2013.873%200%207.65%206.2236%2013.874%2013.873%2013.874%207.65%200%2013.874-6.224%2013.874-13.874%200-7.6494-6.223-13.873-13.874-13.873zm3.451%2014.362h-2.258v8.045h-3.344v-8.045h-1.59v-2.844h1.59v-1.8386c0-1.3172%200.626-3.3753%203.375-3.3753l2.479%200.0095v2.76h-1.799c-0.293%200-0.709%200.1464-0.709%200.7745v1.6709h2.548l-0.292%202.843z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E)
+      //   position: left center
+      //   repeat: no-repeat
+
+      text-indent: 9999999px
+      white-space: nowrap
+      overflow: hidden
+      background-color: pink
+
+    ul
+      list-style: none
+      padding: 0
+      margin-right: 5em
+      display: inline-block
       // background-color: pink
-      width: 100%
+
+
+
+
+    ul.no-margin
+      margin-right: 0em
+
+    li:hover
+      color: $accent
+      cursor: pointer
+    li.title
+      font-weight: bold
+      margin-bottom: 0.714em
+      margin-top: 5.357em
+    li:hover[class^="title"]
+      color: white
+      cursor: auto
+
+
+
+
+
+
+  @media screen and (max-width: 1200px)
+    .footer-menu
       display: flex
+      flex-wrap: wrap
+      align-items: stretch
       justify-content: center
-
+      width: 100%
       ul
-        list-style: none
-        padding: 0
-        margin-right: 5em
-        display: inline-block
-        // background-color: pink
-
-      li:hover
-        color: $accent
-        cursor: pointer
-      li.title
-        font-weight: bold
-        margin-bottom: 0.714em
-        margin-top: 5.357em
-      li:hover[class^="title"]
-        color: white
-        cursor: auto
-      .fb
-      	background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20height%3D%2228%22%20width%3D%2228%22%20version%3D%221.1%22%20viewBox%3D%220%200%2028%2028%22%3E%3Ctitle%3ECapa_1%3C%2Ftitle%3E%3Cdesc%3ECreated%20with%20Sketch.%3C%2Fdesc%3E%3Cg%20id%3D%22facebook-Page-1%22%20fill-rule%3D%22evenodd%22%20fill%3D%22none%22%3E%3Cg%20id%3D%22facebook-Desktop-HD%22%20fill%3D%22%23fff%22%20transform%3D%22translate%28-1333%20-4793%29%22%3E%3Cg%20id%3D%22facebook-Footer%22%20transform%3D%22translate%280%204682%29%22%3E%3Cg%20id%3D%22facebook-Social-media%22%20transform%3D%22translate%281161%20111%29%22%3E%3Cg%20id%3D%22facebook-social%22%20transform%3D%22translate%28172.06%29%22%3E%3Cg%20id%3D%22facebook-Capa_1%22%3E%3Cpath%20id%3D%22facebook-Shape%22%20d%3D%22m13.873%200c-7.6494%200-13.873%206.2236-13.873%2013.873%200%207.65%206.2236%2013.874%2013.873%2013.874%207.65%200%2013.874-6.224%2013.874-13.874%200-7.6494-6.223-13.873-13.874-13.873zm3.451%2014.362h-2.258v8.045h-3.344v-8.045h-1.59v-2.844h1.59v-1.8386c0-1.3172%200.626-3.3753%203.375-3.3753l2.479%200.0095v2.76h-1.799c-0.293%200-0.709%200.1464-0.709%200.7745v1.6709h2.548l-0.292%202.843z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E) left center no-repeat
-        text-indent: 100%
-        white-space: nowrap
-        overflow: hidden
-
-      ul.no-margin
+        display: block
+        width: 12em
         margin-right: 0em
 
-    @media screen and (max-width: 1200px)
-      .footer-menu
-        display: flex
-        flex-wrap: wrap
-        align-items: stretch
-        justify-content: center
-        width: 100%
-        ul
-          display: block
-          width: 12em
-          margin-right: 0em
 
-
-    .subscribe
-      text-align: center
-      // background-color: pink
-      padding-bottom: 6.429em
-
-      h2
-        display: block
-        font-family: Roboto-Bold
-        font-size: 1.714rem
-        color: #ffffff
-        text-align: center
-        text-transform: uppercase
-        // background-color: pink
-        margin: 5.714rem 0em 0em 0em
-
-      input.mail
-        display: inline-block
-        border: 0.143rem solid #ffab40
-        border-radius: 0.714rem
-        width: 18.286rem
-        height: 3.929rem
-        line-height: 3.929rem
-        background-color: transparent
-        font-family:Roboto-Regular
-        font-size: 1.714rem
-        color: #ffffff
-        text-align: center
-        margin: 2.5rem 1.5rem 0px 0px
-        box-sizing: border-box
-
-      button.sign-in
-        display: inline-block
-        background: #ffab40
-        border: 0rem
-        border-radius: 0.714rem
-        width: 18.286rem
-        height: 3.929rem
-        color: white
-        margin: 3.214rem 0em 0em 0em
-        padding: 0em
-        font-family:Roboto-Regular
-        font-size: 1.714rem
-        line-height: 3.929rem
-        color: #ffffff
-        text-align: center
-        margin-top: 3.214rem
-        cursor: pointer
-
-        &:hover,
-        &:focus
-          background-color: darken(#ffab40, 10%)
-
-      @media screen and (max-width: 540px)
-        input.mail
-          margin: 2.5rem auto 0rem
-          display: block
-        button.sign-in
-          margin: 2.5rem auto 0rem
-
-  .rights
-    font-family: Roboto
-    font-size: 1.143rem
-    color: #405aa2
-    line-height: 1.714rem
+  .subscribe
     text-align: center
-    margin: 1.786rem 1rem
+    // background-color: pink
+    padding-bottom: 6.429em
 
-    @media screen and (max-width: 600px)
-      .rights
-        font-size: 1rem
-        // background-color: pink
+    h2
+      display: block
+      font-family: Roboto-Bold
+      font-size: 1.714rem
+      color: #ffffff
+      text-align: center
+      text-transform: uppercase
+      // background-color: pink
+      margin: 5.714rem 0em 0em 0em
+
+    input.mail
+      display: inline-block
+      border: 0.143rem solid #ffab40
+      border-radius: 0.714rem
+      width: 18.286rem
+      height: 3.929rem
+      line-height: 3.929rem
+      background-color: transparent
+      font-family:Roboto-Regular
+      font-size: 1.714rem
+      color: #ffffff
+      text-align: center
+      margin: 2.5rem 1.5rem 0px 0px
+      box-sizing: border-box
+
+    button.sign-in
+      display: inline-block
+      background: #ffab40
+      border: 0rem
+      border-radius: 0.714rem
+      width: 18.286rem
+      height: 3.929rem
+      color: white
+      margin: 3.214rem 0em 0em 0em
+      padding: 0em
+      font-family:Roboto-Regular
+      font-size: 1.714rem
+      line-height: 3.929rem
+      color: #ffffff
+      text-align: center
+      margin-top: 3.214rem
+      cursor: pointer
+
+      &:hover,
+      &:focus
+        background-color: darken(#ffab40, 10%)
+
+    @media screen and (max-width: 540px)
+      input.mail
+        margin: 2.5rem auto 0rem
+        display: block
+      button.sign-in
+        margin: 2.5rem auto 0rem
+
+.rights
+  font-family: Roboto
+  font-size: 1.143rem
+  color: #405aa2
+  line-height: 1.714rem
+  text-align: center
+  margin: 1.786rem 1rem
+
+  // a
+  //   &:hover
+  //     font-weight: bold
+
+  @media screen and (max-width: 600px)
+    .rights
+      font-size: 1rem
+      // background-color: pink
