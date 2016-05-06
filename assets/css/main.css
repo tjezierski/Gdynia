@@ -378,8 +378,14 @@ button:focus {
     display: none; } }
 
 @media screen and (max-width: 640px) {
+  .first-row {
+    margin: 0; }
   .left-panel {
     margin: 2em auto; }
+    .left-panel .burger {
+      margin: 0; }
+  .second-row {
+    display: none; }
   .right-panel {
     display: none; } }
 
@@ -387,42 +393,50 @@ section.slide {
   background: url(/assets/img/slider-cover-1.jpg) no-repeat top center;
   background-size: cover;
   height: 42.857em;
+  max-width: 100%;
   position: relative; }
   section.slide .overlay {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
-    height: 42.857em;
-    width: 100%;
     top: 0em;
+    right: 0em;
+    bottom: 0em;
     left: 0em; }
-    section.slide .overlay .content {
-      margin-left: auto;
-      padding-right: 10.714em;
-      padding-top: 3.929em;
-      width: 42.857em; }
-      section.slide .overlay .content h2.title {
-        font-family: Roboto-Bold;
-        font-size: 3.429rem;
-        color: white;
-        text-align: right;
-        margin-bottom: 1.071rem; }
-      section.slide .overlay .content .orange-box {
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: center;
-            align-items: center;
-        background: #ffab40;
-        border-radius: 0.714em;
-        width: 25.714em;
-        height: 6.429em;
-        margin-left: auto; }
-        section.slide .overlay .content .orange-box p {
-          color: white;
-          font-family: Roboto-Regular;
-          font-size: 1.714rem;
-          text-align: center;
-          line-height: 2.000rem;
-          margin: 0; }
+  section.slide .content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    position: relative;
+    margin-left: auto;
+    padding-right: 10.714em;
+    padding-top: 3.929em;
+    width: 42.857em;
+    max-width: 100%; }
+    section.slide .content h2.title {
+      font-family: Roboto-Bold;
+      font-size: 3.429rem;
+      color: white;
+      text-align: right;
+      margin-bottom: 1.071rem; }
+    section.slide .content .orange-box {
+      position: relative;
+      background: #ffab40;
+      border-radius: 0.714em;
+      width: 25.714em;
+      height: 6.429em;
+      margin-left: auto; }
+  section.slide p {
+    position: absolute;
+    color: white;
+    font-family: Roboto-Regular;
+    font-size: 1.714rem;
+    text-align: center;
+    line-height: 2.000rem;
+    margin: 0;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
 
 .loader {
   display: -ms-flexbox;
@@ -432,20 +446,44 @@ section.slide {
   height: 1.429em;
   margin-top: 1.786em;
   margin-bottom: 3.929em; }
-  .loader span.inactive {
-    display: inline-block;
-    height: 1.429em;
-    width: 1.429em;
-    background-color: rgba(46, 90, 165, 0.5);
-    border-radius: 50%;
-    margin-right: 1.071em; }
-  .loader span.active {
-    display: inline-block;
-    height: 1.429em;
-    width: 1.429em;
-    background-color: #2E5AA5;
-    border-radius: 50%;
-    margin-right: 1.071em; }
+  .loader span:last-child {
+    margin-right: 0; }
+
+span.inactive {
+  display: inline-block;
+  height: 1.429em;
+  width: 1.429em;
+  background-color: rgba(46, 90, 165, 0.5);
+  border-radius: 50%;
+  margin-right: 1.071em; }
+
+span.active {
+  display: inline-block;
+  height: 1.429em;
+  width: 1.429em;
+  background-color: #2E5AA5;
+  border-radius: 50%;
+  margin-right: 1.071em; }
+
+@media screen and (max-width: 960px) {
+  section.slide .content {
+    margin: 0 auto;
+    padding-right: 0em; }
+  section.slide .content h2.title {
+    text-align: center; }
+  .orange-box {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 320px) {
+  section.slide .content h2.title {
+    text-align: center;
+    font-size: 1.8em; }
+  .orange-box {
+    margin: 0 auto;
+    max-width: 80%; }
+    .orange-box p.describe {
+      font-size: 1.4rem;
+      line-height: 1.7rem; } }
 
 aside {
   padding-top: 1.071em; }
